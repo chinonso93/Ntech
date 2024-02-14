@@ -1,0 +1,261 @@
+/* External styling for the size of the text */
+
+@font-face {
+    font-family: mulish-extra-light;
+    src: url("./Fonts/Mulish-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: mulish-extra-light-italic;
+    src: url("./Fonts/Mulish-ExtraLightItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-italic;
+    src: url("./Fonts/Mulish-Italic.ttf");
+}
+
+@font-face {
+    font-family: mulish-ligt;
+    src: url("./fonts/Mulish-Light.ttf");
+}
+
+@font-face {
+    font-family: mulish-light-italic ;
+    src: url("./Fonts/Mulish-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-medium;
+    src: url("./Fonts/Mulish-Medium.ttf");
+}
+
+@font-face {
+    font-family: mulish-medium-italic;
+    src: url("./Fonts/Mulish-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-regular;
+    src: url("./Fonts/Mulish-Regular.ttf");
+}
+
+@font-face {
+    font-family:mulish-semi-bold ;
+    src: url("./Fonts/Mulish-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: mulish-semi-bold-italic;
+    src: url("./Fonts/Mulish-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-bold;
+    src: url("./Fonts/Mulish-Bold.ttf");
+}
+
+@font-face {
+    font-family: mulish-bold-italic;
+    src: url("./Fonts/Mulish-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: mulish-Extra-bold;
+    src: url("./Fonts/Mulish-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: mulish-extra-bold;
+    src: url("./Fonts/Mulish-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: mulish-extra-bold-italic;
+    src: url("./Fonts/Mulish-ExtraBoldItalic.ttf");
+}
+
+:root {
+    --primary: #ff9901;
+    --secondary: aqua;
+
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: block;
+}
+
+
+body {
+    font: size 25px ;
+    width: 100%;
+    margin: 0;
+    font-family: mulish-extra-light;
+}
+
+.homepage-body{
+    opacity: 1;
+}
+
+#homepage-main {
+    width: 85%;
+    margin:0 auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1.5rem 2rem;
+
+}
+
+.logo {
+    font-family: mulish-extra-bold-italic;
+    font-size: 30PX;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo span{
+     color: var(--secondary);
+}
+
+.menu-list{
+    font-family: mulish-medium;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu-item {
+    font-size: 14px;
+    padding: 0.6rem 1.2rem;
+    position: relative;
+}
+
+/* psuedo classes */
+
+.menu-item:first-child {
+    padding-left: 0;
+}
+
+.menu-item:last-child {
+    margin-left: 1rem;
+    background-color: #27034a;
+    padding: 0.6rem 1.8rem;
+    color: var(--secondary);
+    border-radius: 10px;
+}
+
+.n-dropdown {
+    display: grid;
+    grid-template-rows: 0fr;
+    position: absolute;
+    top: 100%;
+    background-color: aliceblue;
+    color: black;
+    transition: grid-template-rows 0.3s ease;
+    font-size: 14px;
+    width: max-content;
+    transform: translateX(-25);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dropdown-con {
+    overflow: hidden;
+}
+
+.menu-item:hover .n-dropdown {
+    grid-template-rows: 1fr;
+}
+
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 0;
+    list-style-type: none;
+    height: auto;
+    width: max-content;
+}
+
+/* HERO------SECTION------*/
+
+.hero {
+    padding: 3rem 2rem;
+}
+
+.hero-div {
+    display:flex;
+    gap: 3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-left, .hero-right{
+    width: calc((100% - 6rem) / 2);
+}
+
+.hero h1 {
+    font-family: mulish-bold;
+}
+
+h1 span {
+    color: var(--secondary);
+}
+
+.hero p { font-family: mulish-regular;
+    margin: 1.8rem 0;
+
+}
+
+.hero button {
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0px;
+    padding: 0.6rem 1.5rem;
+    font-family: mulish-medium;
+}
+
+.hero-icons-list{
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-icons-ityem {
+    width: 35px;
+}
+
+.bitcoin {
+    color: #ffa41c;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.ethereum {
+    color: blue;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
